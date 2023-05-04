@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="styles.css">
+
+  <title>My Website</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header id="home" class="header">
+      <img src="images/Mountains.png" alt="mountains" class="background">
+      <img src="images/Lake.png" alt="lake" class="foreground">
+      <div class="web-title-div">
+        <h1 class="web-title">Welcome to my website!</h1>
+      </div>
+      <button class="menu-button" aria-controls="primary-nav" aria-expanded="false">
+        <i id="barsIcon" class="fa-solid fa-bars"></i>
+        <i id="xmarkIcon" class="fa-solid fa-xmark"></i>
+      </button>
+      <nav>
+        <ul id="primary-nav" data-visible="false" class="navigation underline">
+          <li><a href="#books">Favorite Books</a></li>
+          <li><a href="#past-trips">Past Trips</a></li>
+          <li><a href="#bucket-list">My Bucket List</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="books" class="books-section">
+      <h2 class="title">My Favorite Books </h2>
+      <div class="carousel">
+        <button class="arrow left-arrow"><i class="fa-solid fa-angle-left"></i></button>
+        <div class="carousel-container">
+          <div class="carousel-wrapper">
+            <div class="carousel-item first-item">
+              <img src="images/busem-przez-swiat.jpg" alt="Image 1">
+              <div class="description">
+                <h5 class="book-title">BY BUS AROUND THE WORLD<br> by Karol and Aleksandra Lewandowscy</h5>
+                <p class="book-summary short-summary">
+                  The books describe the authors' trips, their experiences, tips, and thoughts on traveling. 
+                  They can be used as a guide for planning a trip to the places mentioned in the titles.</p>
+                <ul class="book-series short-summary">
+                    <li>Ameryka za 8 dolarów (USA for 8 dollars)</li>
+                    <li>Alaska i Kanada (Alaska and Canada)</li>
+                    <li>Droga 66 (Route 66)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/the-witcher.jpg" alt="Image 2">
+              <div class="description">
+                <h5 class="book-title">THE WITCHER SERIES<br> by Andrzej Sapkowski</h5>
+                <p class="book-summary">
+                  The Witcher is a series of five fantasy novels and short stories (collected in two books) about the witcher Geralt of Rivia. 
+                  The witcher is a beast hunter with supernatural abilities. 
+                  The beasts that the witcher encounters during his journey are based on the myths and legends that the author heard about during his trips.
+                </p>
+                <ol class="book-series">
+                  <li>Ostatnie życzenie (The Last Wish)</li>
+                  <li>Miecz przeznaczenia (The Sword of Destiny)</li>
+                  <li>Krew elfów (Blood of Elves)</li>
+                  <li>Czas pogardy (Time of Contempt)</li>
+                  <li>Chrzest Ognia (Baptism of Fire)</li>
+                  <li>Wieża jaskółki (The Tower of the Swallow)</li>
+                  <li>Pani Jeziora (The Lady of the Lake)</li>
+                  <li>Sezon burz (Season of Storms)</li>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/harry-potter.jpg" alt="Image 3">
+              <div class="description">
+                  <h5 class="book-title">HARRY POTTER SERIES<br> by J.K. Rowling</h5>
+                  <ol class="book-series short-summary">
+                    <li>Harry Potter and the Philospher's Stone</li>
+                    <li>Harry Potter and the Chamber of Secrets</li>
+                    <li>Harry Potter and the Prisoner of Azkaban</li>
+                    <li>Harry Potter and the Goblet of Fire</li>
+                    <li>Harry Potter and the Order of the Phoenix</li>
+                    <li>Harry Potter and the Half-Blood Prince</li>
+                    <li>Harry Potter and the Deathly Hallows</li>
+                  </ol>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/pelna-moc-zycia.jpg" alt="Image 3">
+              <div class="description">
+                <h5 class="book-title">PEŁNA MOC ŻYCIA.<br> JEŚLI O CZYMŚ W ŻYCIU MARZYSZ - SIĘGNIJ PO TO.<br> (Full Power of Life -<br> If you dream of something - make it come true)<br> by Jacek Walkiewicz </h5>
+                <p class="book-summary short-summary">
+                  The author of the book is a psychologist, speaker, coach, and mentor. 
+                  In this book, he writes about the experience he gained through over twenty years of practice. 
+                  He shares his insights about dreams, life, change, values, and courage through funny and thought-provoking stories.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/happiest-man-on-earth.jpg" alt="Image 3">
+              <div class="description">
+                <h5 class="book-title">THE HAPPIEST MAN ON EARTH:<br> THE BEAUTIFUL LIFE OF<br> AN AUSCHWITZ SURVIVOR<br> by Eddie Jaku</h5>
+                <p class="book-summary">
+                  Eddie Jaku always considered himself a German first and a Jew second. He was proud of his country. 
+                  But all of that changed in November 1938 when he was beaten, arrested, and taken to a concentration camp. 
+                  Over the next seven years, Eddie faced unimaginable horrors every day, first in Buchenwald, then in Auschwitz, 
+                  and finally on a Nazi death march. He lost family, friends, and his country. 
+                  Because he survived, Eddie made a vow to smile every day. 
+                  He pays tribute to those who were lost by telling his story, sharing his wisdom, and living his best possible life.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/bez-ograniczen.jpg" alt="Image 3">
+              <div class="description">
+                <h5 class="book-title">BEZ OGRANICZEŃ.<br> JAK RZĄDZI NAMI MÓZG.<br> (Without Limits.<br> How The Brain Governs Us)<br> by Jerzy Vetulani i Maria Mazurek</h5>
+                <p class="book-summary short-summary">
+                  The book is in the form of a conversation between an outstanding neurobiologist and a journalist. 
+                  Jerzy Vetulani, in a simple, funny, and sometimes controversial way, 
+                  talks about the mysteries of a complex and still not fully discovered organ: the human brain.
+                </p>
+              </div>
+            </div>
+            <!-- Add more images as needed -->
+          </div>
+        </div>
+        <button class="arrow right-arrow"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </section>
+
+    <section id="past-trips" class="past-trips">
+
+      <h2 class="title uppercase">My Past Trips</h2>
+      <!-- Photo by <a href="https://unsplash.com/@rocinante_11?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mick Haupt</a>-->
+      <picture id="usa-img" >
+        <img src="images/san-francisco1.jpg" alt="San Francisco" class="img-trips">
+      </picture>
+      <!--Photo by <a href="https://unsplash.com/@rpbfurtado?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">rafael furtado</a>-->
+      <picture id="spain-img" hidden>
+        <img src="images/santiago-de-compostela1.jpg" alt="Santiago de Compostela" class="img-trips">
+      </picture>
+      <!--Photo by <a href="https://unsplash.com/@maxzed?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Max Zed</a>-->
+      <picture id="portugal-img" hidden>
+        <img src="images/algarve1.jpg" alt="Algarve" class="img-trips">
+      </picture>
+      <picture id="romania-img" hidden>
+        <img src="images/peles-castle1.jpg" alt="Peles Castle" class="img-trips">
+      </picture>
+      <!--Photo by <a href="https://unsplash.com/@damiano_baschiera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Damiano Baschiera</a>-->
+      <picture id="italy-img" hidden>
+        <img src="images/venice1.jpg" alt="Venice" class="img-trips">
+      </picture>
+      <picture id="ireland-img" hidden>
+        <img src="images/dingle-peninsula1.jpg" alt="Dingle Peninsula" class="img-trips">
+      </picture>
+
+      <div class="tab-list underline" role="tablist" aria-label="trips list">
+        <button aria-selected="true" role="tab" aria-controls="usa-tab" class="tab-list-button" tabindex="0" data-image="usa-img">
+          USA
+        </button>
+        <button aria-selected="false" role="tab" aria-controls="spain-tab" class="tab-list-button" tabindex="-1" data-image="spain-img">
+          Spain
+        </button>
+        <button aria-selected="false" role="tab" aria-controls="portugal-tab" class="tab-list-button" tabindex="-1" data-image="portugal-img">
+          Portugal
+        </button>
+        <button aria-selected="false" role="tab" aria-controls="romania-tab" class="tab-list-button" tabindex="-1" data-image="romania-img">
+          Romania
+        </button>
+        <button aria-selected="false" role="tab" aria-controls="italy-tab" class="tab-list-button" tabindex="-1" data-image="italy-img">
+          Italy
+        </button>
+        <button aria-selected="false" role="tab" aria-controls="ireland-tab" class="tab-list-button" tabindex="-1" data-image="ireland-img">
+          Ireland
+        </button>
+      </div>
+
+      <!--USA-->
+      <div class="past-trips-info" id="usa-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">USA</h3>
+        <p class="country-text">
+          I visited the USA while I was a student. I participated in the Work and Travel program three times and visited these states:
+        </p>
+        <ol>
+          <div class="places-container">
+            <div class="places">COLORADO</div>
+            <ul class="cities">
+              <li>Breckenridge</li>
+              <li>Colorado Springs</li>
+              <li>Royal Gorge Bridge and Park</li>
+              <li>Denver</li>
+            </ul>
+          </div>
+          <div class="places-container">
+            <div class="places">UTAH</div> 
+            <ul class="cities">
+              <li>Park City</li>
+              <li>Salt Lake City</li>
+              <li>Arches National Park</li>
+              <li>Zion National Park</li>
+            </ul>
+          </div>
+          <div class="places-container">
+            <div class="places">ARIZONA</div> 
+            <ul class="cities">
+              <li>Grand Canyon National Park</li>
+              <li>Antelope Canyon</li>
+              <li>Horseshoe Bend</li>
+            </ul>
+          </div>
+          <div class="places-container">
+            <div class="places">NEVADA</div> 
+            <ul class="cities">
+              <li>Las Vegas</li>
+            </ul>
+          </div>
+          <div class="places-container">
+            <div class="places">WYOMING, IDAHO, MONTANA</div> 
+            <ul class="cities">
+              <li>Yellowstone National Park</li>
+            </ul>
+          </div>
+          <div class="places-container">
+            <div class="places">CALIFORNIA</div> 
+            <ul class="cities">
+              <li>San Diego</li>
+              <li>Los Angeles</li>
+              <li>San Francisco</li>
+              <li>Joshua Tree National Park</li>
+              <li>Mojave National Preserve</li>
+              <li>Death Valley National Park</li>
+            </ul>
+          </div>
+          <div class="places-container">
+            <div class="places">FLORIDA</div> 
+            <ul class="cities">
+              <li>Miami</li>
+              <li>Key West</li>
+            </ul>
+          </div>
+          <div class="places-container">
+            <div class="places">LOUISIANA</div> 
+            <ul class="cities">
+              <li>New Orleans</li>
+            </ul>
+          </div>
+          <div class="places">NEW JERSEY</div>
+          <div class="places-container">
+            <div class="places">NEW YORK</div>
+            <ul class="cities">
+              <li>New York City</li>
+            </ul>
+          </div>
+        </ol>
+      </div>
+      <!--Spain-->
+      <div hidden class="past-trips-info" id="spain-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">SPAIN</h3>
+        <p class="country-text">
+          During the last year of my Master's degree, I decided to participate in the Erasmus program.
+          My friend and I went to Santiago de Compostela. Here are all the places we visited during our stay in Spain:
+        </p>
+        <ol>
+          <div class="places">Santiago de Compostela</div>
+          <div class="places">Pontevedra</div>
+          <div class="places">A Coruña</div>
+          <div class="places">Vigo</div>
+          <div class="places">Cañon del Sil</div>
+          <div class="places">Islas Ons</div>
+          <div class="places">Region of Rías Baixas</div>
+          <div class="places">Salamanca</div>
+          <div class="places">León</div>
+          <div class="places">Segovia</div>
+          <div class="places">Ávila</div>
+        </ol>
+      </div>
+      <!--Portugal-->
+      <div hidden class="past-trips-info" id="portugal-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">PORTUGAL</h3>
+        <p class="country-text center-text">
+          We also visited Portugal during our Erasmus program.
+        </p>
+        <ol>
+          <div class="places">Porto</div>
+          <div class="places">Algarve</div>
+          <div class="places">Faro</div>
+        </ol>
+      </div>
+      <!--Romania-->
+      <div hidden class="past-trips-info" id="romania-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">ROMANIA</h3>
+        <p class="country-text center-text">
+          Romania is my husband's country.<br> It's a must-see.
+        </p>
+        <ol>
+          <div class="places">Iași</div>
+          <div class="places">Brasov</div>
+          <div class="places">Bran and Bran Castle</div>
+          <div class="places">Sibiu </div>
+          <div class="places">Peleș Castle near Sinaia </div>
+          <div class="places">Transfăgărășan</div>
+          <div class="places">Bucovina</div>
+        </ol>
+        </div>
+      <!--Italy-->
+      <div hidden class="past-trips-info" id="italy-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">ITALY</h3>
+        <p class="country-text center-text">
+          Our wedding took place in Italy, where we also went for our honeymoon.
+        </p>
+        <ol>
+          <div class="places">Malcesine</div>
+          <div class="places">Riva del Garda</div>
+          <div class="places">Venice</div>
+          <div class="places">Florence</div>
+          <div class="places">Pisa</div>
+          <div class="places">Bergamo</div>
+          <div class="places">Chiantigiana and the Chianti region:</div>
+            <ol>
+              <div class="places">Montefioralle</div>
+              <div class="places">Castellina in Chianti</div>
+              <div class="places">Volpaia</div>
+              <div class="places">Siena</div>
+              <div class="places">Monteriggioni</div>
+              <div class="places">Colle di Val d'Elsa</div>
+              <div class="places">San Giminiano</div>
+            </ol>
+          </li>
+        <ol> 
+      </div>
+      <!--Ireland--> 
+      <div hidden class="past-trips-info" id="ireland-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">IRELAND</h3>
+        <p class="country-text center-text">
+          I currently live here.
+        </p>
+        <ol>
+          <div class="places">Dingle Peninsula</div>
+          <div class="places">Blarney Castle</div>
+          <div class="places">Cobh</div>
+          <div class="places">Fota Island</div>
+          <div class="places">Midleton</div>
+          <div class="places">Greenway (Dungarvan - Waterford)</div>
+          <div class="places">Waterford</div>
+          <div class="places">Killarney National Park</div>
+          <div class="places">Kilkenny</div>
+        </ol>
+      </div>
+    </section>
+    
+    <section id="bucket-list" class="bucket-list">
+
+      <h2 class="title uppercase">My Travel Bucket List</h2>
+      <!-- Photo by <a href="https://unsplash.com/de/@natejohnston?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nate Johnston</a>-->
+      <picture id="new-zealand-img" >
+        <img src="images/new-zealand.jpg" alt="San Francisco" class="img-trips">
+      </picture>
+      <!--Photo by <a href="https://unsplash.com/@withluke?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luke Stackpoole</a>-->
+      <picture id="iceland-img" hidden>
+        <img src="images/iceland1.jpg" alt="Santiago de Compostela" class="img-trips">
+      </picture>
+      <!--Photo by <a href="https://unsplash.com/@chrishenryphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Henry</a>-->
+      <picture id="switzerland-img" hidden>
+        <img src="images/switzerland.jpg" alt="Algarve" class="img-trips">
+      </picture>
+      <!--Photo by <a href="https://unsplash.com/@tanelah?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taneli Lahtinen</a>-->
+      <picture id="norway-img" hidden>
+        <img src="images/norway1.jpg" alt="Peles Castle" class="img-trips">
+      </picture>
+      <!--Photo by <a href="https://unsplash.com/@darshanp9?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Darshan Patel</a>-->
+      <picture id="orlando-img" hidden>
+        <img src="images/orlando.jpg" alt="Venice" class="img-trips">
+      </picture>
+
+
+      <div class="tab-list underline" role="tablist" aria-label="trips list">
+        <button aria-selected="true" role="tab" aria-controls="new-zealand-tab" class="tab-list-button" tabindex="0" data-image="new-zealand-img">
+          New Zealand
+        </button>
+        <button aria-selected="false" role="tab" aria-controls="iceland-tab" class="tab-list-button" tabindex="-1" data-image="iceland-img">
+          Iceland
+        </button>
+        <button aria-selected="false" role="tab" aria-controls="switzerland-tab" class="tab-list-button" tabindex="-1" data-image="switzerland-img">
+          Switzerland
+        </button>
+        <button aria-selected="false" role="tab" aria-controls="norway-tab" class="tab-list-button" tabindex="-1" data-image="norway-img">
+          Norway
+        </button>
+        <button aria-selected="false" role="tab" aria-controls="orlando-tab" class="tab-list-button" tabindex="-1" data-image="orlando-img">
+          Universal Orlando
+        </button>
+      </div>
+
+      <!--New Zealand-->
+      <div class="bucket-list-info" id="new-zealand-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">NEW ZEALAND</h3>
+        <p class="country-text center-text">
+          One of my biggest dreams.
+        </p>
+        <ol>
+          <div class="places">NORTH ISLAND:</div>
+            <ul class="places-sublist">
+              <li>Rangitoto Island</li>
+              <li >Cathedral Cove</li>
+              <li >Hamilton Gardens</li>
+              <li >Hobbiton</li>
+              <li >Waitomo Glowworm Caves</li>
+              <li>Waimangu Volcanic Valley</li>
+            </ul>
+          <div class="places">SOUTH ISLAND:</div>
+            <ul class="places-sublist">
+              <li>Abel Tasman National Park</li>
+              <li>Whale Watch Kaikoura</li>
+              <li>Waiau Uwha River</li>
+              <li>Castle Hill Rocks</li>
+              <li>The Catlins</li>
+              <li>Star Gaze at the Southern Cross in Tekapo</li>
+              <li>Roys Peak Track</li>
+              <li>That Wanaka Tree</li>
+              <li>Doubtful Sound</li>
+              <li>Milford Sound - Milford Track</li>
+            </ul>
+        </ol>
+      </div>
+      <!--Iceland-->
+      <div hidden class="bucket-list-info" id="iceland-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">ICELAND</h3>
+        <p class="country-text center-text">
+          Another place on my bucket list is Iceland.<br> My dream is to see the northern lights there.
+        </p>
+        <ol>
+          <div class="places">Jökulsárlón Glacier Lagoon</div>
+          <div class="places">Diamond Beach</div>
+          <div class="places">Vik Beaches</div>
+          <div class="places">Dyrhólaey Lighthouse</div>
+          <div class="places">The Golden Circle</div>
+          <div class="places">Snæfellsnes peninsula</div>
+          <div class="places">Skógafoss and Seljalandsfoss</div>
+          <div class="places">Myvatn</div>
+          <div class="places">The Icelandic Highlands</div>
+          <div class="places">Goðafoss Waterfall</div>
+          <div class="places">Fjaðrárgljúfur Canyon</div>
+          <div class="places">East Fjords</div>
+          <div class="places">Milford Sound - Milford Track</div>
+        </ol>
+      </div>
+      <!--Switzerland-->
+      <div hidden class="bucket-list-info" id="switzerland-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">SWITZERLAND</h3>
+        <p class="country-text">
+          Switzerland seems like a postcard. The landscape and the cities are so beautiful that it's hard to choose what to see. 
+          One thing is for sure, I must take a trip on the The Bernina Express train.
+        </p>
+        <ol>
+          <div class="places">Lauterbrunnen</div>
+          <div class="places">The Albula-Bernina Railway Line</div>
+          <div class="places">Wengen and Swiss Grand Canyon</div>
+          <div class="places">Interlaken</div>
+          <div class="places">Jungfraujoch</div>
+          <div class="places">Lucerne</div>
+          <div class="places">Mürren</div>
+          <div class="places">Grindelwald</div>
+          <div class="places">Ticino & Lake Lugano</div>
+        </ol>
+      </div>
+      <!--Norway-->
+      <div hidden class="bucket-list-info" id="norway-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">NORWAY</h3>
+        <p class="country-text">
+          What attracts me to Norway are the fjords. 
+          I can't wait to see them. It's another place where I could see the northern lights.
+        </p>
+        <ol>
+          <div class="places">The Flam Railway</div>
+          <div class="places">Pulpit Rock (Preikestolen)</div>
+          <div class="places">Lovatnet Lake</div>
+          <div class="places">Geiranger Fjord</div>
+          <div class="places">Rampestreken</div>
+          <div class="places">The Atlantic Ocean Road</div>
+          <div class="places">Reine (Lofoten Islands)</div>
+        </ol>
+        </div>
+      <!--Universal Orlando-->
+      <div hidden class="bucket-list-info" id="orlando-tab" tabindex="0" role="tabpanel">
+        <h3 class="country">THE WIZARDING WORLD OF HARRY POTTER<br><span class="universal-sub">(UNIVERSAL ORLANDO)</span></h3>
+        <p class="country-text">
+          The Wizarding World deserves its own card. 
+          Visiting the Harry Potter-themed park in Orlando is another one of my biggest dreams. 
+        </p>
+      </div>
+    </section>
+  </div>
+  <script src="index.js" defer></script>
+</body>
+</html>
